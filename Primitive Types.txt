@@ -1,0 +1,12 @@
+5 Prmitives Types
+// Numbers -> 4 9.3 -10
+// strings -> "Hello World"
+// Booleans -> true and false
+// Null means explicitly nothing
+// Undefined means variables is declared but did not initialized
+
+
+Variables
+
+
+// Variables are simply containers that store values
