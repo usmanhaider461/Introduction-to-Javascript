@@ -1,3 +1,4 @@
+// Todo List App 
 var todo = prompt("What would you like to do?");
 todo = todo.toLowerCase();
 
@@ -7,11 +8,27 @@ while(todo !== "quit") {
         var task = prompt("What do you want to add in TodoList?");
         todoList.push(task);
     } else if(todo === "list"){
-        alert("Your Todo List [ " + todoList + " ]");
-    } else {
+       listTodos();
+    } else if(todo === "delete") {
+       deleteTodo();
+    } 
+    else {
         alert("Wrong Choice");
     }
     todo = prompt("What would you like to do?");
 }
 
 alert("In Your Todo List We have -> " + todoList);
+
+function listTodos() {
+     todoList.forEach(function(el,i){
+            console.log("*************");
+            console.log(i + ": " + el);
+            console.log("*************");
+        });
+}
+
+function deleteTodo() {
+     var index = prompt("Enter the index to be deleted? ");
+        todoList.splice(index,1);
+  }
